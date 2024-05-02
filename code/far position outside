@@ -1,0 +1,17 @@
+#include <PRIZM.h>
+
+PRIZM yazid;
+
+void setup() {
+  // put your setup code here, to run once:
+  yazid.PrizmBegin();
+yazid.setMotorInvert(1,1);
+yazid.setRedLED(1);
+  yazid.setMotorPowers(30,30);
+delay(7000);
+yazid.setMotorPowers(125, 125);
+}
+
+
+void loop() {
+};
